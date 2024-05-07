@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='/artists.css') }}"> 
+
+<div class="navbar">
+    
+    <a href="{{url_for('nocturne')}}" id="nocturne" align="left">NOCTURNE</a>
+    <a href="{{url_for('artists')}}" id="art" align="right">Artists</a>
+    <a href="{{url_for('about')}}" id="abt" align="right">About</a>
+    <a href="{{url_for('search')}}" id="sea" align="right">Search</a>
+    <a href="{{url_for('spotlight')}}" id="spo" align="right">Spotlight</a>
+    <a href="{{url_for('playlist')}}" id="pla" align="right">Playlist</a>
+
+    <div class="logo-image" style="object-position: 50% 100%; object-fit: fill; overflow: hidden;">
+        <img src="https://i.pinimg.com/564x/de/74/89/de74895619a9bdc4388cb18b7aa3d9a9.jpg" class="img-fluid" align="top" style="object-position: 50% 10%; object-fit: cover; overflow: hidden;">
+  </div>
+  </div>
+
+  
+  <div class="sidenav">
+    <a href="{{url_for('home')}}">Welcome</a>
+    <a href="{{url_for('nocturne')}}">Home</a>
+    <a href="{{url_for('artists')}}" style="color:white;">Artists</a>
+    <a href="{{url_for('spotlight')}}">Spotlight</a>
+    <a href="{{url_for('search')}}">Search</a>
+    <a href="{{url_for('playlist')}}" >Playlist</a>
+    <a href="{{url_for('about')}}">About</a>
+    <a href="{{url_for('lm')}}" >Little Mix</a>
+    <a href="{{url_for('pentatonix')}}">Pentatonix</a>
+    <a href="{{url_for('pritam')}}">Pritam</a>
+    <a href="{{url_for('sabrinacarpenter')}}">Sabrina Carpenter</a>
+    <a href="{{url_for('svt')}}">Seventeen</a>
+    <a href="{{url_for('twice')}}">Twice</a>
+  
+  </div>
+ <div class="container">
+    <h1 style="color:white; top:30px; font-size: 500%; left:50%" align="center">ARTISTS</h1>
+<div class="wrapper">
+    <div class="box lm">
+        <a href="{{url_for('lm')}}"><button class="button button1" style="position:absolute; top: 313px; left: 665px;">LITTLE MIX</button></a>
+    </div>
+    <div class="box pt">
+        <a href="{{url_for('pentatonix')}}"><button class="button button1" style="position:absolute; top: 313px; left: 1295px;">PENTATONIX</button></a>
+    </div>
+    <div class="box pr">
+        <a href="{{url_for('pritam')}}"><button class="button button1" style="position:absolute; top: 813px; left: 665px;">PRITAM</button></a>
+    </div>
+    <div class="box sc">
+        <a href="{{url_for('sabrinacarpenter')}}"><button class="button button1"  style="position:absolute; top: 813px; left: 1295px;">SABRINA CARPENTER</button></a>
+    </div>
+    <div class="box svt">
+        <a href="{{url_for('svt')}}"><button class="button button1" style="position:absolute; top: 1313px; left: 665px;">SEVENTEEN</button></a>
+    </div>
+    <div class="box tw">
+        <a href="{{url_for('twice')}}"><button class="button button1" style="position:absolute; top:1313px; left: 1295px;">TWICE</button></a>
+    </div>
+</div>
+
+</div>
+<footer style="position:absolute; top:2050px;">
+    <a href="{{url_for('about')}}" style="text-decoration:none; color:white; top:1425px;">About</a></p>
+  </footer>
+</body>
+<script src="{{ url_for('static', filename='/spotlight.js') }}"></script>
+
+</html>

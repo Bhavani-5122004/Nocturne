@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<body>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/playlist.css') }}">
+<div class="typing-area"> 
+    <h1 class= "typing" id="typing"> PLAYLIST... </h1>
+  </div>      
+
+  <div class="navbar">
+    
+    <a href="{{url_for('nocturne')}}" id="nocturne" align="left">NOCTURNE</a>
+    <a href="{{url_for('artists')}}" id="art" align="right">Artists</a>
+    <a href="{{url_for('about')}}" id="abt" align="right">About</a>
+    <a href="{{url_for('search')}}" id="sea" align="right">Search</a>
+    <a href="{{url_for('spotlight')}}" id="spo" align="right">Spotlight</a>
+    <a href="{{url_for('playlist')}}" id="pla" align="right">Playlist</a>
+    
+    <div class="logo-image">
+        <img src="https://i.pinimg.com/564x/de/74/89/de74895619a9bdc4388cb18b7aa3d9a9.jpg" class="img-fluid" align="top">
+  </div>
+  </div>
+
+  
+  <div class="sidenav">
+    <a href="{{url_for('home')}}">Welcome</a>
+    <a href="{{url_for('nocturne')}}">Home</a>
+    <a href="{{url_for('artists')}}">Artists</a>
+    <a href="{{url_for('spotlight')}}">Spotlight</a>
+    <a href="{{url_for('search')}}">Search</a>
+    <a href="{{url_for('playlist')}}" style="color:white;">Playlist</a>
+    <a href="{{url_for('about')}}">About</a>
+    <a href="{{url_for('lm')}}" >Little Mix</a>
+    <a href="{{url_for('pentatonix')}}">Pentatonix</a>
+    <a href="{{url_for('pritam')}}">Pritam</a>
+    <a href="{{url_for('svt')}}">Seventeen</a>
+    <a href="{{url_for('twice')}}">Twice</a>
+  
+  </div>
+  <div class="reviews_container">
+
+    <table id="ratings" action="result">
+        <tr>
+            <td>Song</td>
+            <td>Artist</td>
+            <td>Duration</td>
+            <td>Remove From Playlist</td>
+        </tr>
+        
+        {% for row in result %}    
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}s</td>
+              <td><form method="post" action="remove">
+              <input type="hidden" name="column1" value='{{row[0]}}'>
+              <input type="hidden" name="column2" value='{{row[1]}}'>
+              <input type="hidden" name="column3" value='{{row[2]}}'>
+              
+              <button class="rem" type="submit"></button>
+            </form>
+            </td>
+          </tr>
+        {% endfor %}
+    </table>
+  <script src="{{ url_for('static', filename='/playlist.js') }}"></script>
+  <footer style="position:absolute; top:2050px; width:2320px">
+    <a href="{{url_for('about')}}" style="text-decoration:none; color:white; top:1425px;">About</a></p>
+  </footer>
+</body>
+</html>

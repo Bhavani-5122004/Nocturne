@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+   width: 1920px;
+    height:1080px;
+    background-color: black;
+    background-image: url("https://i.pinimg.com/564x/18/75/2c/18752c8067e26a8575df27672d58198b.jpg");
+  }
+
+  .logo-image{
+    object-fit: fill;
+    width: 196px;
+    height: 46px;
+    overflow: hidden;
+    object-position: 0% 0%;
+}
+
+  .navbar {
+    overflow: hidden;
+    background-color: #dea2feb6;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  .navbar a{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    float:right;
+    display:block;
+    color: #000000;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: none;
+    font-size: 15px;
+    font-family: Verdana;
+    height: 25px;
+    top: 0;
+    z-index: 1;
+  }
+
+  ::selection {
+    background: #e2acffc5;
+    color:white;
+  }
+
+  @keyframes eg{
+    from{ opacity: 50%;
+      object-position: 50% 50%; }
+    to{opacity: 100%;
+      object-position: 100% 100%; }
+   }
+
+  mark { 
+    background-color: #dea2fe8b;
+    border-radius: 10%;
+    opacity: 100%;
+    display: inline-block;
+    color: white;
+    font-size: 200%;
+  }
+
+
+
+  .sidenav {
+    height: 1080px; 
+    width: 140px;
+    position: fixed; 
+    z-index: 1; 
+    top: 45px; 
+    left: 0;
+    background-color: #dea2fea9; 
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 10px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: top left;
+    color: #000000;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .container {
+  padding: 18px;
+  margin-top: 100px;
+  margin-left:150px;
+  height: 1500px;
+  
+}
+
+
+
+footer {
+  margin-bottom: 0px;
+  margin-top: 100px;
+  display:block;
+  color: #000000;
+  padding: 5px 5px;
+  text-align: center;
+  background-color: #dea2fea8;
+  color: rgb(0, 0, 0);
+  top:1750px;
+  margin-left: 0px;
+  margin-right:0px;
+  opacity: 100%;
+  width: 1920px;
+  height:50px;
+}
+
+
+.wrapper {
+display: grid;
+margin-left: 445px;
+margin-bottom: 100px;
+grid-row-gap: 100px;
+grid-column-gap: 230px;
+grid-template-columns: 170px 170px;
+color: #444;
+background-color: rgba(255, 255, 255, 0);
+}
+
+.box{
+background-color: #dea2fe;
+color: #fff;
+top:80px;
+height: 130px;
+width: 130px;
+border-radius: 100px;
+padding: 100px;
+font-size: 300%;
+float:center;
+text-align:center;
+
+}
+
+ .lm{
+    background-image: url("https://i.pinimg.com/564x/55/0b/ec/550becdf8f1e34879b099655c2e2739c.jpg");
+    border: 1px solid #dea2fe;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+    animation-name: eg;
+    animation-duration: 5s;
+  }
+  .pr {
+    background-image: url("https://i.pinimg.com/564x/d3/5f/3b/d35f3b84c28898347bcce457ba4c605d.jpg");
+    border: 1px solid #dea2fe;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    
+    animation-name: eg;
+    animation-duration: 3s;
+  }
+    
+  .pt {
+    background-image: url("https://i.pinimg.com/564x/93/ad/67/93ad67646b4805114b40826a318b535f.jpg");
+    border: 1px solid #dea2fe;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    animation-name: eg;
+    animation-duration: 3s;
+
+  }
+
+ 
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column{
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    margin: 4px 2px;
+    top:80px;
+    height: 400px;
+    width:400px;
+    border-radius: 80px;
+    padding: 100px;
+    opacity: 0%;
+    cursor:pointer
+  }
+ 
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #dea2fe;
+    opacity:00%;
+    border-radius: 100px;
+    height:400px;
+    width:403px;
+  }
+  
+  .button1:hover {
+    background-color: #dea2fe50;
+    color: white;
+    opacity:100%;
+    font-size:75%;
+    font-family:'Times New Roman';
+    height:400px;
+    width:403px;
+  }

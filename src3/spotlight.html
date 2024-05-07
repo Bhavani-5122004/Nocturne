@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<body>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/spotlight.css') }}">
+<div class="typing-area"> 
+    <h1 class= "typing" id="typing"> NOCTURNE... </h1>
+  </div>      
+
+  <div class="navbar">
+    
+    <a href="{{url_for('nocturne')}}" id="nocturne" align="left">NOCTURNE</a>
+    <a href="{{url_for('artists')}}" id="art" align="right">Artists</a>
+    <a href="{{url_for('about')}}" id="abt" align="right">About</a>
+    <a href="{{url_for('search')}}" id="sea" align="right">Search</a>
+    <a href="{{url_for('spotlight')}}" id="spo" align="right">Spotlight</a>
+    <a href="{{url_for('playlist')}}" id="pla" align="right">Playlist</a>
+    
+    <div class="logo-image">
+        <img src="https://i.pinimg.com/564x/de/74/89/de74895619a9bdc4388cb18b7aa3d9a9.jpg" class="img-fluid" align="top">
+  </div>
+  </div>
+
+  
+  <div class="sidenav">
+    <a href="{{url_for('home')}}">Welcome</a>
+    <a href="{{url_for('nocturne')}}">Home</a>
+    <a href="{{url_for('artists')}}" >Artists</a>
+    <a href="{{url_for('spotlight')}}"style="color:white;">Spotlight</a>
+    <a href="{{url_for('search')}}">Search</a>
+    <a href="{{url_for('playlist')}}" >Playlist</a>
+    <a href="{{url_for('about')}}">About</a>
+    <a href="{{url_for('lm')}}" >Little Mix</a>
+    <a href="{{url_for('pentatonix')}}">Pentatonix</a>
+    <a href="{{url_for('pritam')}}">Pritam</a>
+    <a href="{{url_for('sabrinacarpenter')}}">Sabrina Carpenter</a>
+    <a href="{{url_for('svt')}}">Seventeen</a>
+    <a href="{{url_for('twice')}}">Twice</a>
+  
+  </div>
+  <div class= 'container'>
+    <div id="zoom" class="container_outer_img">
+        <img id="zoom" src='https://i.pinimg.com/564x/20/aa/a2/20aaa2eb02994d39b969b9279a689c95.jpg'  alt="" class="container_img"/>
+            </div>
+    <div class="container_content">
+    <div class="container_content_inner">
+    <div class="title">
+      <h1>LITTLE MIX</h1>
+    </div>
+    <p>
+        Perrie Edwards, Leigh-Anne Pinnock and Jade Thirlwall have established themselves as the world's biggest girl band - they have sold over 50 million records worldwide, collected over 17 million Spotify listeners, received over 3 billion Youtube views, and collated 12 billion streams worldwide. 2019 witnessed Little Mix win their second Brit Award – this time for Best British Video for ‘Woman Like Me’, and perform the same song live at the Brits. They also won two Global Awards for Best Group and Best Song, followed by their 4th EMA Award for Best UK & Ireland Act. 
+        In 2021, Little Mix made history by becoming the first female band to win the award for British group at the Brit Awards. 
+    </p>
+    </div>
+    </div>
+     
+      </div>
+
+      <div class="cards-container">
+        <div class="card_outer">
+            <div class="card_img1">
+                <div class="img1">
+  
+                </div>
+            </div>
+            <div class="card_content">
+                You might know her as one-third of Little Mix, but get ready to meet her as 100% Jade 
+                Thirlwall.<br></br> The 29-year-old member of one of the biggest X Factor success stories is 
+                embarking on a solo music career, Billboard confirmed, signing. . .
+                <button class="button2" onclick=" window.open('https://www.billboard.com/music/music-news/little-mix-jade-thirlwall-solo-career-rca-1235042586/','_blank')" align="center" >Read More</button>
+            </div>
+        </div>
+        <div class="card_outer">
+            <div class="card_img2">
+                <div class="img2">
+                </div>
+            </div>
+            <div class="card_content">
+                Audible is teaming up with singer, song-writer and actor Leigh-Anne Pinnock on an 
+                adaptation of The Little Mermaid. <br></br>Based on the classic story by Hans Christian
+                Andersen, the Audible version has been. . . 
+                <button class="button2" onclick=" window.open('https://deadline.com/2023/03/little-mix-leigh-anne-pinnock-audible-little-mermaid-1235307040/','_blank')" align="center" >Read More</button>
+            </div>
+            
+                
+            </div>
+
+        <div class="card_outer">
+            <div class="card_img3">
+                <div class="img3">
+  
+                </div>
+            </div>
+            <div class="card_content">
+                Her life may be going 100 miles an hour, but Perrie Edwards is keeping up with it all. 
+                Over the past few years, a lot has changed for the star.<br></br> In between Little Mix's hiatus 
+                and final tour, she's been busy working on her fashion label Disora. . .
+                <button class="button2" onclick=" window.open('https://graziadaily.co.uk/celebrity/news/perrie-edwards-disora-brand-wedding-new-music/','_blank')" align="center" >Read More</button>
+            </div>
+        </div>
+        </div>
+
+
+      <div class="countdown-container">
+  
+        <div class="days-container">
+          <div class="days"></div>
+          <div class="days-label">days</div>
+        </div>
+        
+        <div class="hours-container">
+          <div class="hours"></div>
+          <div class="hours-label">hours</div>
+        </div>
+        
+        <div class="minutes-container">
+          <div class="minutes"></div>
+          <div class="minutes-label">minutes</div>
+        </div>
+        
+        <div class="seconds-container">
+          <div class="seconds"></div>
+          <div class="seconds-label">seconds</div>
+        </div>
+        
+    </div>
+    <div class="reviews_container">
+    <div class="input_container">
+      
+        <div class="user">
+        <input id="userInput" type="text" placeholder="User Id">
+        </div>
+        <div class="artist">
+          <input id="artInput" type="text" placeholder="Artist">
+          </div>
+        <div class="rev">
+        <textarea id="revInput" type="text" placeholder="Review" rows="6" cols="40"></textarea>
+        </div>
+        <h3 style="margin-left: 2%; color:#000000a2">Rating</h3>
+        <div class="btn_container">
+            <input type="radio" name="btn_radio" value="1">1
+            <input type="radio" name="btn_radio" value="2">2
+            <input type="radio" name="btn_radio" value="3">3
+            <input type="radio" name="btn_radio" value="4">4
+            <input type="radio" name="btn_radio" value="5">5
+        </div>
+        <div class="input_button">
+        <button onclick="returnText()">Submit</button>
+        </div>
+    </div>  
+    <table id="ratings">
+        <tr>
+          <td>User</td>
+          <td>Artist</td>
+          <td>Review</td>
+          <td>Ratings</td>
+        </tr>
+    </table>
+    </div>
+  <script src="{{ url_for('static', filename='/spotlight.js') }}"></script>
+  <footer style="position:absolute; top:2050px;">
+    <a href="{{url_for('about')}}" style="text-decoration:none; color:white; top:1425px;">About</a></p>
+  </footer>
+</body>
+</html>

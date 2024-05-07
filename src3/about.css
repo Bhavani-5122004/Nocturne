@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  background-color: black;
+
+  width:1920px;
+  height:1080px;
+}
+
+table, th, td {
+  border:2px solid black;
+  border-color: black;
+  position: relative;
+  width:1920px;
+  height:1080px;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes glow {
+from {
+  box-shadow: 0 0 10px #fff, 0 0 20px #dea2fe, 0 0 30px #dea2fe;
+}
+to {
+  box-shadow: 0 0 20px #fff, 0 0 30px #dea2fe, 0 0 40px #dea2fe, 0 0 50px #dea2fe;
+}
+}
+.navbar {
+  overflow: hidden;
+  background-color: #dea2feb6;
+  opacity: 100%;
+  position: fixed;
+  top: 0;
+  z-index:1;
+  width: 100%;
+}
+.navbar a {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  float:right;
+  display:block;
+  color: #000000;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: none;
+  font-size: 15px;
+  font-family: Verdana;
+  height: 25px;
+  top: 0;
+  z-index:1;
+
+}
+.navbar a:hover {
+    height: 30px;
+    top: 0;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #dea2fe;
+    z-index:1;
+}
+
+
+.container {
+padding: 0px;
+margin-top: 50px;
+margin-bottom: 0px;
+height: 1080px;
+width:1920px;
+}
+
+footer {
+  margin-bottom: 0px;
+  margin-top: 100px;
+  display:block;
+  color: #000000;
+  padding: 5px 5px;
+  text-align: center;
+  background-color: #dea2fea8;
+  color: rgb(0, 0, 0);
+  top:1750px;
+  margin-left: 0px;
+  margin-right:0px;
+  opacity: 100%;
+  width: 1920px;
+  height:50px;
+}
+
+
+.logo-image{
+  object-fit: fill;
+  width: 196px;
+  height: 46px;
+  overflow: hidden;
+  object-position: 0% 0%;
+}
+
+.img1{
+border-radius: 100px;
+position:absolute;
+height:200px;
+width:200px;
+}
+
+
+
+.circle {
+border:2px solid white;
+border-radius:50%;
+background:rgba(0,0,0,0);
+color:white;
+width: 220px;
+height: 220px;
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+from {
+  box-shadow: 0 0 10px #fff, 0 0 20px #dea2fe, 0 0 30px #dea2fe;
+}
+to {
+  box-shadow: 0 0 20px #fff, 0 0 30px #dea2fe, 0 0 40px #dea2fe, 0 0 50px #dea2fe;
+}
+}
+
+.star{
+position: absolute;
+  top:400px;
+  opacity: 100%;
+  overflow: hidden;
+  animation: starmove infinite 5s linear;
+}
+
+@keyframes starmove{
+0%{
+   transform:rotate(0deg);
+}
+100%{
+   transform: rotate(359deg);
+}
+}
+
+span {
+display: inline-block;
+}
+
+.t1 {
+transform: translate(20px, 85px) rotate(-28deg);
+}
+
+.h1 {
+transform: translate(-10px, 55px) rotate(-24deg);
+}
+
+.e1 {
+transform: translate(-35px, 35px) rotate(-20deg);
+}
+
+.r1 {
+transform: translate(-58px, 23px) rotate(-20deg);
+}
+
+.e2 {
+transform: translate(-75px, 14px) rotate(-12deg);
+}
+
+.s1 {
+transform: translate(-60px, 8px) rotate(-8deg);
+}
+
+.a1 {
+transform: translate(-80px, 5px) rotate(-4deg);
+}
+
+.s2 {
+transform: translate(-60px, 0px) rotate(0deg);
+}
+
+.o1 {
+transform: translate(-85px, 4px) rotate(2deg);
+}
+
+.n1 {
+transform: translate(-105px, 10px) rotate(6deg);
+}
+
+.g1 {
+transform: translate(-90px, 30px) rotate(12deg);
+}
+
+.f1 {
+transform: translate(-115px, 45px) rotate(16deg);
+}
+
+.o2 {
+transform: translate(-130px, 60px) rotate(20deg);
+}
+
+.r2 {
+transform: translate(-155px, 85px) rotate(24deg);
+}
+
+.e3 {
+transform: translate(-185px, 105px) rotate(28deg);
+}

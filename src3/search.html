@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<body>
+  <link rel="stylesheet" href="{{ url_for('static', filename='/search.css') }}">
+  <div class="typing-area"> 
+    <h1 class= "typing" id="typing"> SEARCH... </h1>
+  </div>  
+
+  <div class="navbar">
+
+    <a href="{{url_for('nocturne')}}" id="nocturne" align="left">NOCTURNE</a>
+    <a href="{{url_for('artists')}}" id="art" align="right">Artists</a>
+    <a href="{{url_for('about')}}" id="abt" align="right">About</a>
+    <a href="{{url_for('search')}}" id="sea" align="right">Search</a>
+    <a href="{{url_for('spotlight')}}" id="spo" align="right">Spotlight</a>
+    <a href="{{url_for('playlist')}}" id="pla" align="right">Playlist</a>
+
+    <div class="logo-image" style="object-position: 50% 100%; object-fit: fill; overflow: hidden;">
+        <img src="https://i.pinimg.com/564x/de/74/89/de74895619a9bdc4388cb18b7aa3d9a9.jpg" class="img-fluid" align="top" style="object-position: 50% 10%; object-fit: cover; overflow: hidden;">
+  </div>
+  </div>
+
+
+  <div class="sidenav">
+    <a href="{{url_for('home')}}">Welcome</a>
+  <a href="{{url_for('nocturne')}}">Home</a>
+  <a href="{{url_for('artists')}}">Artists</a>
+  <a href="{{url_for('about')}}">About</a>
+  <a href="{{url_for('spotlight')}}">Spotlight</a>
+  <a href="{{url_for('search')}}" style="color:white;">Search</a>
+  <a href="{{url_for('playlist')}}">Playlist</a>
+  <a href="{{url_for('lm')}}" >Little Mix</a>
+  <a href="{{url_for('pentatonix')}}">Pentatonix</a>
+  <a href="{{url_for('pritam')}}">Pritam</a>
+  <a href="{{url_for('sabrinacarpenter')}}">Sabrina Carpenter</a>
+  <a href="{{url_for('svt')}}">Seventeen</a>
+  <a href="{{url_for('twice')}}">Twice</a>
+
+  </div>
+
+  <form>
+    <label class="title" for="search">Search:</label>
+    <input type="text" name="term" id="search" placeholder="What do you want to hear?" style="color:#4e0774">
+
+
+    <label class="dur" for="duration-filter">Maximum Duration:</label>
+    <input type="number" id="duration-filter" name="duration-filter" style="color:#4e0774" min="0" step="1">
+
+    <label class="exp" for="explicit-filter">Non-Explicit</label>
+    <input type="checkbox" id="explicit-filter" name="explicit-filter"onclick="clearnonexpl(); clearrem()" onsubmit="clearnonexpl(); clearrem()">
+
+    <label class="exp" for="explicit-filter1">Explicit</label>
+    <input type="checkbox" id="explicit-filter1" name="explicit-filter1" onclick="clearexpl(); clearrem()" onsubmit="clearexpl(); clearrem()">
+
+    <label class="rem"  for="remfilters">Remove Filters</label>
+    <input type="checkbox" id="remfilters" name="remfilters" onclick="clearSearch()" onsubmit="clearSearch()">
+    <input class="sub" type="submit" value="Search" >
+  </form>
+
+  <div id="search-results" class="res"></div>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img class="imag" onclick=" window.open('https://www.buzzfeednews.com/article/benhenry/little-mix-interview-between-us-greatest-hits-album','_blank')"  src="{{ url_for('static', filename='/lma2.png') }}" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img class="imag" onclick=" window.open('https://www.billboard.com/music/pop/seventeen-fml-trailer-1235303428/','_blank')" src="{{ url_for('static', filename='/svta1.png') }}" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img class="imag" onclick=" window.open('https://www.billboard.com/music/features/twice-billboard-women-in-music-breakthrough-interview-1235258462/','_blank')" src="{{ url_for('static', filename='/twa1.png') }}" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img class="imag" onclick=" window.open('https://www.billboard.com/pro/sabrina-carpenter-nonsense-hot-100-debut-streaming/','_blank')" src="{{ url_for('static', filename='/sca2.png') }}" style="width:100%">
+
+  </div>
+
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+<div class="new">POPULAR NEW RELEASES:</div>
+  <div class="albums_container">
+    <div class="album_c" onclick=" window.open('https://open.spotify.com/album/08HCdXZVN72S2vpIT9DKhU','_blank')">
+      <div class="alb1">
+
+      </div>
+      <div class="tex">Indigo</div>
+      <div class="tex">RM</div>
+
+    </div>
+    <div class="album_c" onclick=" window.open('https://open.spotify.com/album/6FL3GfTcb8cf4xwMJlcynq','_blank')">
+      <div class="alb2">
+
+      </div>
+      <div class="tex">Higher Than Heaven</div>
+      <div class="tex">Ellie Goulding</div>
+    </div>
+    <div class="album_c" onclick=" window.open('https://open.spotify.com/album/5OZ44LaqZbpP3m9B3oT8br','_blank')">
+      <div class="alb3">
+
+      </div>
+      <div class="tex">Red Moon In Venus</div>
+      <div class="tex">Kali Uchis</div>
+    </div>
+    <div class="album_c" onclick=" window.open('https://open.spotify.com/album/14U1j9lp8yGrUzWZpPJVz7','_blank')">
+      <div class="alb4">
+
+      </div>
+      <div class="tex">Lovin' Me</div>
+      <div class="tex">Fifty Fifty</div>
+    </div>
+
+
+  </div>
+  <footer style="position:relative; top:100%;">
+    <a href="{{url_for('about')}}" style="text-decoration:none; color:white; top:100%;">About</a></p>
+  </footer>
+</body>
+<script src="{{ url_for('static', filename='/search.js') }}"></script> 
+
+</html>

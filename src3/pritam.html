@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='/pritam.css') }}">
+<div class="navbar">
+  <a href="{{url_for('nocturne')}}" id="nocturne" align="left">NOCTURNE</a>
+  <a href="{{url_for('artists')}}" id="art" align="right">Artists</a>
+  <a href="{{url_for('about')}}" id="abt" align="right">About</a>
+  <a href="{{url_for('search')}}" id="sea" align="right">Search</a>
+  <a href="{{url_for('spotlight')}}" id="spo" align="right">Spotlight</a>
+  <a href="{{url_for('playlist')}}" id="pla" align="right">Playlist</a>
+  
+    <div class="logo-image">
+        <img src="https://i.pinimg.com/564x/de/74/89/de74895619a9bdc4388cb18b7aa3d9a9.jpg" class="img-fluid" align="top">
+  </div>
+ </div>
+ <div class="sidenav">
+        <a href="{{url_for('nocturne')}}">Home</a>
+    <a href="{{url_for('artists')}}">Artists</a>
+    <a href="{{url_for('spotlight')}}">Spotlight</a>
+    <a href="{{url_for('search')}}">Search</a>
+    <a href="{{url_for('playlist')}}">Playlist</a>
+    <a href="{{url_for('about')}}">About</a>
+    <a href="{{url_for('lm')}}">Little Mix</a>
+    <a href="{{url_for('pentatonix')}}">Pentatonix</a>
+  <a href="{{url_for('pritam')}}" style="color:white;">Pritam</a>
+  <a href="{{url_for('prjwm')}}" style="font-size: 15px; font-size: smaller;">Jab We Met</a>
+  <a href="{{url_for('pryjhd')}}"  style="font-size: 15px; font-size: smaller;">Yeh Jawaani Hai Deewani</a>
+  <a href="{{url_for('prouatim')}}" style="font-size: 15px; font-size: smaller;">Once Upon A Time In Mumbai</a>
+  <a href="{{url_for('prc')}}" style="font-size: 15px; font-size: smaller;">Cocktail</a>
+  <a href="{{url_for('pradhm')}}" style="font-size: 15px;font-size: smaller;">Ae Dil Hai Mushkil</a>
+  <a href="{{url_for('prav')}}" style="font-size: 15px; font-size: smaller;">Agent Vinod</a>
+  <a href="sabrinacarpenter.html">Sabrina Carpenter</a>
+  <a href="{{url_for('svt')}}">Seventeen</a>
+  <a href="{{url_for('twice')}}">Twice</a>
+  </div>
+ <div class="container">
+    <img src="{{ url_for('static', filename='/pritam.png') }}" style="padding-top: 0px; padding-bottom: 30px; height:400px; width: 400px; left:50px; border-radius: 100%;   object-fit: fill;">
+    <h1 style="color:white; position: absolute; top: 170px; right:250px; font-size: 500%;" align="center">PRITAM</h1>
+<div class="wrapper">
+    <div class="box jwt">
+        <a href="{{url_for('prjwm')}}"><button class="button button1" onclick="window.location.href='prjwm.html';" style="position:absolute; top: 549px; left: 665px;">JAB WE MET</button></a>
+        <figcaption style="top:970px; left:808px; position: absolute; font-size: medium;">2007 • 10 songs</figcaption> 
+    </div>
+    <div class="box yj">
+        <a href="{{url_for('pryjhd')}}"><button class="button button1" onclick="window.location.href='pryjhd.html';" style="position:absolute; top: 549px; left: 1295px;">YEH JAWAANI HAI DIWANI</button></a>
+        <figcaption style="top:970px; left:1438px; position: absolute; font-size: medium; white-space: nowrap;">2013 • 9 songs</figcaption> 
+    </div>
+    <div class="box mb">
+        <a href="{{url_for('prouatim')}}"><button class="button button1" onclick="window.location.href='prouatim.html';" style="position:absolute; top: 1046px; left: 665px;">ONCE UPON A TIME IN MUMBAAI</button></a>
+        <figcaption style="top:1470px; left:808px; position: absolute; font-size: medium;">2010 • 11 songs</figcaption> 
+    </div>
+    <div class="box ct">
+        <a href="{{url_for('prc')}}"><button class="button button1" onclick="window.location.href='prc.html';" style="position:absolute; top: 1046px; left: 1295px;">COCKTAIL</button></a>
+       <figcaption style="top:1470px; left:1438px; position: absolute; font-size: medium; white-space: nowrap;">2012 • 11 songs</figcaption> 
+    </div>
+    <div class="box ad">
+        <a href="{{url_for('pradhm')}}"><button class="button button1" onclick="window.location.href='pradhm.html';" style="position:absolute; top: 1551px; left: 665px;">AE DIL HAI MUSHKIL</button></a>
+        <figcaption style="top:1970px; left:808px; position: absolute; font-size: medium;">2016 • 9 songs</figcaption> 
+    </div>
+    <div class="box av">
+        <a href="{{url_for('prav')}}"><button class="button button1" onclick="window.location.href='prav.html';" style="position:absolute; top:1551px; left: 1295px;">AGENT VINOD</button></a>
+        <figcaption style="top:1970px; left:1438px; position: absolute; font-size: medium; white-space: nowrap;">2012 • 12 songs</figcaption> 
+        </div>
+</div>
+
+</div>
+<footer style="position:absolute; top:2050px;">
+    <a href="{{url_for('about')}}" style="text-decoration:none; color:white; top:1425px;">About</a></p>
+  </footer>
+</body>
+<script src="{{ url_for('static', filename='/spotlight.js') }}"></script>
+</html>

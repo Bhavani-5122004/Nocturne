@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='/svt.css') }}">
+    <div class="navbar">
+      <a href="{{url_for('nocturne')}}" id="nocturne" align="left">NOCTURNE</a>
+      <a href="{{url_for('artists')}}" id="art" align="right">Artists</a>
+      <a href="{{url_for('about')}}" id="abt" align="right">About</a>
+      <a href="{{url_for('search')}}" id="sea" align="right">Search</a>
+      <a href="{{url_for('spotlight')}}" id="spo" align="right">Spotlight</a>
+      <a href="{{url_for('playlist')}}" id="pla" align="right">Playlist</a>
+      
+    <div class="logo-image">
+        <img src="https://i.pinimg.com/564x/de/74/89/de74895619a9bdc4388cb18b7aa3d9a9.jpg" class="img-fluid" align="top">
+  </div>
+ </div>
+ <div class="sidenav">
+    <a href="{{url_for('home')}}">Welcome</a>
+    <a href="{{url_for('nocturne')}}">Home</a>
+    <a href="{{url_for('artists')}}" >Artists</a>
+    <a href="{{url_for('spotlight')}}">Spotlight</a>
+    <a href="{{url_for('search')}}">Search</a>
+    <a href="{{url_for('playlist')}}" >Playlist</a>
+    <a href="{{url_for('about')}}">About</a>
+    <a href="{{url_for('lm')}}" >Little Mix</a>
+    <a href="{{url_for('pentatonix')}}">Pentatonix</a>
+    <a href="{{url_for('pritam')}}">Pritam</a>
+    <a href="{{url_for('sabrinacarpenter')}}">Sabrina Carpenter</a>
+    <a href="{{url_for('svt')}}" style="color:white;">Seventeen</a>
+    <a href="{{url_for('svts17')}}" style="font-size: 15px;">Sector 17</a>
+  <a href="{{url_for('svtfts')}}"  style="font-size: 15px;">Face The Sun</a>
+  <a href="{{url_for('svtat')}}" style="font-size: 15px;">Attaca</a>
+  <a href="{{url_for('svtanode')}}" style="font-size: 15px;">An Ode</a>
+  <a href="{{url_for('svtteenage')}}" style="font-size: 15px;">Teen,Age</a>
+  <a href="{{url_for('svtlal')}}" style="font-size: 15px;">Love & Letter</a>
+  <a href="{{url_for('twice')}}">Twice</a>
+  </div>
+ <div class="container">
+    <img src="{{ url_for('static', filename='/seventeen.png') }}" style="padding-top: 0px; padding-bottom: 30px; height:400px; width: 400px; border-radius: 100%;   object-fit: fill;">
+    <h1 style="color:white; position: absolute; top: 170px; right:100px; font-size: 500%;" align="center">SEVENTEEN</h1>
+<div class="wrapper">
+    <div class="box s7">
+        <a href="{{url_for('svts17')}}"><button class="button button1" onclick="window.location.href='svts17.html';" style="position:absolute; top: 549px; left: 665px;">SECTOR 17</button></a>
+        <figcaption style="top:970px; left:808px; position: absolute; font-size: medium;">2022 • 13 songs</figcaption> 
+    </div>
+    <div class="box fts">
+        <a href="{{url_for('svtfts')}}"><button class="button button1" onclick="window.location.href='svtfts.html';" style="position:absolute; top: 549px; left: 1295px;">FACE THE SUN</button></a>
+        <figcaption style="top:970px; left:1438px; position: absolute; font-size: medium; white-space: nowrap;">2022 • 9 songs</figcaption> 
+    </div>
+    <div class="box ata">
+        <a href="{{url_for('svtat')}}"><button class="button button1" onclick="window.location.href='svtat.html';" style="position:absolute; top: 1049px; left: 665px;">ATTACA</button></a>
+        <figcaption style="top:1470px; left:808px; position: absolute; font-size: medium;">2021 • 7 songs</figcaption> 
+    </div>
+    <div class="box ao">
+        <a href="{{url_for('svtanode')}}"><button class="button button1" onclick="window.location.href='svtanode.html';" style="position:absolute; top: 1049px; left: 1295px;">AN ODE</button></a>
+       <figcaption style="top:1470px; left:1438px; position: absolute; font-size: medium; white-space: nowrap;">2019 • 11 songs</figcaption> 
+    </div>
+    <div class="box ta">
+        <a href="{{url_for('svtteenage')}}"><button class="button button1" onclick="window.location.href='svtteenage.html';" style="position:absolute; top: 1554px; left: 665px;">TEEN, AGE</button></a>
+        <figcaption style="top:1970px; left:808px; position: absolute; font-size: medium;">2017 • 13 songs</figcaption> 
+    </div>
+    <div class="box lal">
+        <a href="{{url_for('svtlal')}}"><button class="button button1" onclick="window.location.href='svtlal.html';" style="position:absolute; top:1554px; left: 1295px;">LOVE&LETTER</button></a>
+        <figcaption style="top:1970px; left:1438px; position: absolute; font-size: medium; white-space: nowrap;">2016 • 10 songs</figcaption> 
+        </div>
+</div>
+
+</div>
+<footer style="position:absolute; top:2050px;">
+    <a href="{{url_for('about')}}" style="text-decoration:none; color:white; top:1425px;">About</a></p>
+  </footer>
+</body>
+
+<script src="{{ url_for('static', filename='/spotlight.js') }}"></script>
+</html>

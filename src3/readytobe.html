@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  
+<body >
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='/betweenus.css') }}">
+  <div class="navbar">
+    
+    <a href="{{url_for('nocturne')}}" id="nocturne" align="left">NOCTURNE</a>
+    <a href="{{url_for('artists')}}" id="art" align="right">Artists</a>
+    <a href="{{url_for('about')}}" id="abt" align="right">About</a>
+    <a href="{{url_for('search')}}" id="sea" align="right">Search</a>
+    <a href="{{url_for('spotlight')}}" id="spo" align="right">Spotlight</a>
+    <a href="{{url_for('playlist')}}" id="pla" align="right">Playlist</a>
+    <div class="logo-image">
+        <img src="https://i.pinimg.com/564x/de/74/89/de74895619a9bdc4388cb18b7aa3d9a9.jpg" class="img-fluid" align="top">
+  </div>
+ </div>
+ <div class="sidenav">
+  <a href="{{url_for('home')}}">Welcome</a>
+  <a href="{{url_for('nocturne')}}">Home</a>
+  <a href="{{url_for('artists')}}">Artists</a>
+  <a href="{{url_for('about')}}">About</a>
+  <a href="{{url_for('spotlight')}}">Spotlight</a>
+  <a href="{{url_for('search')}}">Search</a>
+  <a href="{{url_for('playlist')}}">Playlist</a>
+  <a href="{{url_for('lm')}}" >Little Mix</a>
+  <a href="{{url_for('pentatonix')}}">Pentatonix</a>
+  <a href="{{url_for('pritam')}}">Pritam</a>
+  <a href="{{url_for('sabrinacarpenter')}}">Sabrina Carpenter</a>
+  <a href="{{url_for('svt')}}">Seventeen</a>
+  <a href="{{url_for('twice')}}"   style="color:white;">Twice</a>
+  <a href="{{url_for('readytobe')}}" style="font-size:15px;  color:white;">READY TO BE</a>
+  <a href="{{url_for('between1and2')}}" style="font-size:15px;">BETWEEN 1 & 2</a>
+  <a href="{{url_for('fol')}}" style="font-size:15px; ">Formula of Love: O+T=&lt3</a>
+  <a href="{{url_for('perfectworld')}}" style="font-size:15px;">Perfect World</a>
+  <a href="{{url_for('andtwice')}}" style="font-size:15px; ">&TWICE</a>
+  <a href="{{url_for('feelspecial')}}" style="font-size:15px;">Feel Special</a>
+</div>
+  <div class="container">
+    
+      <div class="aligned">
+        <img src=
+    "https://i.scdn.co/image/ab67616d0000b27359f57a5ca507a3d3fed81ea6"
+    style="padding-right: 20px;
+    padding-top: 10px; padding-left: 20px; padding-bottom: 20px;"
+    width="300" height="300">
+    
+    
+    <span><font style="color:white;" ><h1>READY TO BE</h1><br/><h3>Twice</h3><br/><h5>2023 • 6 songs, 17 min 23 sec</h5></font></span>
+    <div class="circular--portrait aligned "> <img src="https://i.pinimg.com/736x/45/c5/d7/45c5d754927b85af59801080fd1cfddf.jpg"
+      style="position:absolute; top: 150px; right: 200px; height:210px; width:210px" /> </div>
+    <button class="button button1" onclick=" window.open('https://www.youtube.com/watch?v=IPk3M154M3s&list=OLAK5uy_nUtAAFJNq4dmwtDeujFf74GmrSQX-BjZU')" style="position:absolute; top: 150px; right:200px;"></button>
+    
+    <a href = "https://www.youtube.com/watch?v=IPk3M154M3s&list=OLAK5uy_nUtAAFJNq4dmwtDeujFf74GmrSQX-BjZU" target = "_self"><h3 align:right><font style="color:white; text-align: right; position:absolute; top:400px; right:270px">Play All</font></h3></a>
+    
+
+    </div>   
+
+ 
+     
+       
+   
+    <br/>
+    <font  color="white" size="2" face="Courier New" >
+    
+      <table style="width: 100%;" >
+        
+        
+        
+        <tr>
+           <th style="text-align: left"><h2>#</h2></th>
+           <th style="text-align: left"><h2>Title</h2></th>
+          
+        </tr>
+        <tr>
+          
+            <td style="text-align: left"><font><h3>1</h3></font></td>
+            <td style="text-align: left"><font><h3>SET ME FREE</h3></font></td>
+            <td style="text-align: left;"><font><h4>3:01</h4></font></td>
+            <td>
+              <form method="post" action="print_first_row" style="display:flex;">
+                
+                <input type="hidden" name="column1" value="SET ME FREE">
+                <input type="hidden" name="column2" value="Twice">
+                <input type="hidden" name="column3" value="3:01">
+                
+                
+                <button type="submit" class="addb"></button>
+                <p class="addt">   </p>
+                <p class="addt" style="color:white; margin-left: 2%; white-space: nowrap;">Add to Playlist</p>
+              </form>
+            </td>
+          
+          </tr>
+        <tr>
+          
+          <td style="text-align: left"><h3>2</h3></td>
+          <td style="text-align: left"><font><h3>MOONLIGHT SUNRISE</h3></font></td>
+          <td style="text-align: left"><h4><font color="white">3:00</font></h4></td>
+          <td>
+            <form method="post" action="print_first_row" style="display:flex;">
+             
+              <input type="hidden" name="column1" value="MOONLIGHT SUNRISE">
+              <input type="hidden" name="column2" value="Twice">
+              <input type="hidden" name="column3" value="3:00">
+              
+              
+              <button type="submit" class="addb"></button>
+              <p class="addt">   </p>
+              <p class="addt" style="color:white; margin-left: 2%; white-space: nowrap;">Add to Playlist</p>
+            </form>
+          </td>
+          
+          
+        </tr>
+        <tr>
+          <td style="text-align: left"><h3>3</h3></td>
+          <td style="text-align: left"><h3>GOT THE THRILLS</h3></td>
+          <td style="text-align: left"><h4><font color="white">2:53</font></h4></td>
+          <td>
+            <form method="post" action="print_first_row" style="display:flex;">
+              
+              <input type="hidden" name="column1" value="GOT THE THRILLS">
+              <input type="hidden" name="column2" value="Twice">
+              <input type="hidden" name="column3" value="2:53">
+              
+              
+              <button type="submit" class="addb"></button>
+              <p class="addt">   </p>
+              <p class="addt" style="color:white; margin-left: 2%; white-space: nowrap;">Add to Playlist</p>
+            </form>
+          </td>
+          
+        </tr>
+        <tr>
+          <td style="text-align: left"><h3>4</h3></td>
+          <td style="text-align: left"><h3>BLAME IT ON ME</h3></td>
+          <td style="text-align: left"><h4><font color="white">2:56</font></h4></td>
+          <td>
+            <form method="post" action="print_first_row" style="display:flex;">
+              
+              <input type="hidden" name="column1" value="BLAME IT ON ME">
+              <input type="hidden" name="column2" value="Twice">
+              <input type="hidden" name="column3" value="2:56">
+              
+              
+              <button type="submit" class="addb"></button>
+              <p class="addt">   </p>
+              <p class="addt" style="color:white; margin-left: 2%; white-space: nowrap;">Add to Playlist</p>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><h3>5</h3></td>
+          <td style="text-align: left"><h3>WALLFLOWER</h3></td>
+          <td style="text-align: left"><h4><font color="white">2:49</font></h4></td>
+          <td>
+            <form method="post" action="print_first_row" style="display:flex;">
+              
+              <input type="hidden" name="column1" value="WALLFLOWER">
+              <input type="hidden" name="column2" value="Twice">
+              <input type="hidden" name="column3" value="2:49">
+              
+              
+              <button type="submit" class="addb"></button>
+              <p class="addt">   </p>
+              <p class="addt" style="color:white; margin-left: 2%; white-space: nowrap;">Add to Playlist</p>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left"><h3>6</h3></td>
+          <td style="text-align: left"><h3>CRAZY STUPID LOVE</h3></td>
+          <td style="text-align: left"><h4><font color="white">3:01</font></h4></td>
+          <td>
+            <form method="post" action="print_first_row" style="display:flex;">
+              
+              <input type="hidden" name="column1" value="CRAZY STUPID LOVE">
+              <input type="hidden" name="column2" value="Twice">
+              <input type="hidden" name="column3" value="3:01">
+              
+              
+              <button type="submit" class="addb"></button>
+              <p class="addt">   </p>
+              <p class="addt" style="color:white; margin-left: 2%; white-space: nowrap;">Add to Playlist</p>
+            </form>
+          </td>
+        </tr>
+
+        
+        
+      </table>
+    </font>
+    
+    
+  </div>
+  
+
+
+
+
+
+    
+      
+    
+  <script src="{{ url_for('static', filename='/script.js') }}"></script> 
+</body>
+
+<footer style="position:absolute; top:2050px;">
+  <a href="{{url_for('about')}}" style="text-decoration:none; color:white; top:1425px;">About</a></p>
+</footer>
+
+
+
+</html>

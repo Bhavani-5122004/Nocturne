@@ -1,0 +1,238 @@
+
+  
+  body {
+    margin: 0;
+    width: 1920px;
+    height:1080px;
+    background-color: black;
+    padding-bottom: 20%;
+    background-image: url("https://i.pinimg.com/564x/7c/1a/23/7c1a23259375741d43ce91b43c779744.jpg");
+    --gradient: linear-gradient(
+      244deg ,
+      #dea2fe 2%,
+      #c353ff 49%,
+      #7c0fb7 71%,
+      #430365 100%
+    );
+  }
+
+  ::selection {
+    background: #e2acffc5;
+    color:white;
+  }
+
+  @keyframes glow {
+    from {
+        box-shadow: 0 0 2px #dea2fe, 0 0 3px #fff, 0 0 4px #fff, 0 0 5px #dea2fe;
+    }
+    to {
+      box-shadow: 0 0 2px #430365, 0 0 3px #7c0fb7, 0 0 4px #c353ff, 0 0 5px #dea2fe;
+    }
+  }
+.typing-area{
+    display: flex;
+    left: 50%;
+    margin-left: 10%;
+    top:30%;
+    margin-top: 4%;
+}
+
+  .typing{
+    font-family: monospace;
+    background: var(--gradient);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    position: relative;
+    top:0%;
+    left:40%;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  .typing::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #000000;
+    color: black;
+    padding: 1px;
+        left: 40%;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+
+  
+  .logo-image{
+    object-fit: fill;
+    width: 196px;
+    height: 46px;
+    overflow: hidden;
+    object-position: 0% 0%;
+    opacity: 100%;
+}
+
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #dea2feb6;
+    position: fixed;
+    top: 0;
+    z-index:1;
+    width: 100%;
+  }
+  .navbar a {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    float:right;
+    display:block;
+    color: #000000;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: none;
+    font-size: 15px;
+    font-family: Verdana;
+    height: 25px;
+    top: 0;
+  }
+  /*.navbar a:hover {
+      height: 30px;
+      top: 0;
+      padding: 10px 15px;
+      background-color: #000000;
+      color: #dea2fe;
+  }
+  */
+
+ 
+ 
+
+  .sidenav {
+    height: 1080px; 
+    width: 140px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 45px;
+    left: 0;
+    background-color: #dea2fea9; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 10px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: top left;
+    color: #000000;
+    display: block;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+
+ 
+
+  footer {
+    margin-bottom: 0px;
+    margin-top: 100px;
+    display:block;
+    color: #000000;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: #dea2fea8;
+    color: rgb(0, 0, 0);
+    top:1750px;
+    margin-left: 0px;
+    margin-right:0px;
+    opacity: 100%;
+    width: 1920px;
+    height:50px;
+  }
+
+
+  ::selection {
+    background: #e2acffc5;
+    color:white;
+  }
+
+  #ratings {
+    font-family: Arial;
+    border-collapse: collapse;
+    height:30%;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  
+  .reviews_container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    width:50%;
+    display:flex;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px 40px 20px #dea2feb7;
+
+}
+
+.rem{
+    border-radius: 100%;
+    background-image: url("https://i.pinimg.com/564x/75/ec/79/75ec79a2e490ff71013a21e6533293d0.jpg");
+    background-color: #000000;
+    width: 12%;
+    height: 30px;
+    margin-left: 30%;
+    box-shadow: 3px 2px #dea2fe;
+    cursor:pointer;
+}
+
+.rem:hover{
+    background-color: #7c0fb7;
+}
+
+
+.image1
+{
+    width:10%;
+    height:15%;
+    margin-top:2%;
+    margin-left:45%;
+    background-color: white;
+    border-radius: 25px;
+}
+#ratings tr:nth-child(even){
+    background-color: #dea2fe66; 
+}
+  .trans{
+    color:white;
+  }
+
+  #ratings tr:hover {background-color: #c353ff62;}
+  
+  #ratings tr {
+    display: flex;
+  }
+
+  #ratings td {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+    background-color: #dea2fe00;
+    color:#430365;
+    border: 1px solid #dea2fe;
+    padding: 8px;
+    height:30px;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+    background-color: #dea2fe00;
+    color: #430365;
+  }

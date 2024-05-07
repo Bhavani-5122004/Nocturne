@@ -1,0 +1,75 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='/nocturne.css') }}"> 
+
+<div class="navbar">
+    
+    <a href="{{url_for('nocturne')}}" id="nocturne" align="left">NOCTURNE</a>
+    <a href="{{url_for('artists')}}" id="art" align="right">Artists</a>
+    <a href="{{url_for('about')}}" id="abt" align="right">About</a>
+    <a href="{{url_for('search')}}" id="sea" align="right">Search</a>
+    <a href="{{url_for('spotlight')}}" id="spo" align="right">Spotlight</a>
+    <a href="{{url_for('playlist')}}" id="pla" align="right">Playlist</a>
+
+    
+    <div class="logo-image">
+        <img src="https://i.pinimg.com/564x/de/74/89/de74895619a9bdc4388cb18b7aa3d9a9.jpg" class="img-fluid" align="top">
+  </div>
+ </div>
+ <div class="sidenav">
+    <a href="{{url_for('home')}}">Welcome</a>
+    <a href="{{url_for('nocturne')}}" style="color:white;">Home</a>
+    <a href="{{url_for('artists')}}" >Artists</a>
+    <a href="{{url_for('spotlight')}}">Spotlight</a>
+    <a href="{{url_for('search')}}">Search</a>
+    <a href="{{url_for('playlist')}}" >Playlist</a>
+    <a href="{{url_for('about')}}">About</a>
+    <a href="{{url_for('lm')}}" >Little Mix</a>
+    <a href="{{url_for('pentatonix')}}">Pentatonix</a>
+    <a href="{{url_for('pritam')}}">Pritam</a>
+    <a href="{{url_for('svt')}}">Seventeen</a>
+    <a href="{{url_for('twice')}}">Twice</a>
+  
+  </div>
+ <div class="container">
+    <h1 style="color:white; top:30px; font-size: 500%;" align="center">NOCTURNE</h1>
+<div class="wrapper">
+    <div class="box lm">
+        <img align="left" src="{{ url_for('static', filename='/littlemix.png') }}" height="100px" width="100px" style="position: absolute; top:652px; left:605px; border: 2px solid white; border-radius: 100%;">
+        <a href="{{url_for('lm')}}"><figcaption style="top:690px; left:719px; position: absolute; font-size: 40%; color:#dea2fe;"><mark>1. LITTLE MIX</mark></figcaption></a>
+        <img align="left" src="{{ url_for('static', filename='/twice.png') }}" height="100px" width="100px" style="position: absolute; top:767px; left:605px; border: 2px solid white; border-radius: 100%;">
+        <a href="{{url_for('twice')}}"><figcaption style="top:805px; left:719px; position: absolute; font-size: 40%; color:#dea2fe;"><mark>2. TWICE</mark></figcaption></a>
+        <img align="left" src="{{ url_for('static', filename='/seventeen.png') }}" height="100px" width="100px" style="position: absolute; top:882px; left:605px; border: 2px solid white; border-radius: 100%;">
+        <a href="{{url_for('svt')}}"><figcaption style="top:920px; left:719px; position: absolute; font-size: 40%; color:#dea2fe;"><mark>3. SEVENTEEN</mark></figcaption></a>
+        </div>
+    <div class="box pt">
+        <img align="left" src="https://i.scdn.co/image/ab67616d0000b27315174e2b2347b5ffbea6dbf0" height="100px" width="100px" style="position: absolute; top:652px; left:1020px; border: 2px solid white; border-radius: 100%;">
+        <a href="{{url_for('lmlm5')}}"><figcaption style="top:690px; left:1134px; position: absolute; font-size: 40%; color:#dea2fe;"><mark>1. LM5</mark></figcaption></a>
+        <img align="left" src="https://i.scdn.co/image/ab67616d0000b27323d51443b0535e7d428f4e3d" height="100px" width="100px" style="position: absolute; top:767px; left:1020px; border: 2px solid white; border-radius: 100%;">
+        <a href="{{url_for('athome')}}"><figcaption style="top:805px; left:1134px; position: absolute; font-size: 40%; color:#dea2fe;"><mark>2. AT HOME</mark></figcaption></a>
+        <img align="left" src="https://i.scdn.co/image/ab67616d0000b27349b81808fcdaeeb55bef59d1" height="100px" width="100px" style="position: absolute; top:882px; left:1020px; border: 2px solid white; border-radius: 100%;">
+        <a href="{{url_for('feelspecial')}}"><figcaption style="top:920px; left:1134px; position: absolute; font-size: 40%; color:#dea2fe;"><mark>3. FEEL SPECIAL</mark></figcaption></a>
+        
+         </div>
+    <div class="box pr">
+        <img align="left" src="https://i.scdn.co/image/ab67616d0000b2732139a9fca45751cc0b0f53ba" height="100px" width="100px" style="position: absolute; top:652px; left:1420px; border: 2px solid white; border-radius: 100%;">
+        <figcaption style="top:690px; left:1533px; position: absolute; white-space: nowrap;font-size: 40%; color:#dea2fe;"><mark>1. DARL+ING</mark></figcaption> 
+        <img align="left" src="https://i.scdn.co/image/ab67616d0000b2732b2473f0d8c4ea75d62fba09" height="100px" width="100px" style="position: absolute; top:767px; left:1420px; border: 2px solid white; border-radius: 100%;">
+        <figcaption style="top:805px; left:1533px; position: absolute; white-space: nowrap; font-size: 40%; color:#dea2fe;"><mark>2. SKIN</mark></figcaption> 
+        <img align="left" src="https://i.scdn.co/image/ab67616d0000b273198d0d6659372adaa801ea4d" height="100px" width="100px" style="position: absolute; top:882px; left:1420px; border: 2px solid white; border-radius: 100%;">
+        <figcaption style="top:920px; left:1533px; position: absolute; white-space: nowrap; font-size: 40%; color:#dea2fe;"><mark>3. ONLY YOU</mark></figcaption> 
+        
+         </div>
+</div>
+
+</div>
+<footer style="position:absolute; top:2050px;">
+    <a href="{{url_for('about')}}" style="text-decoration:none; color:white; top:1425px;">About</a></p>
+  </footer>
+</body>
+<script src="{{ url_for('static', filename='/spotlight.js') }}"></script>
+</html>

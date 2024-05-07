@@ -1,0 +1,49 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/home.css') }}"> 
+    <div class="navbar">
+    
+        <a href="{{url_for('nocturne')}}" id="nocturne" align="left">NOCTURNE</a>
+        <a href="{{url_for('artists')}}" id="art" align="right">Artists</a>
+        <a href="{{url_for('about')}}" id="abt" align="right">About</a>
+        <a href="{{url_for('search')}}" id="sea" align="right">Search</a>
+        <a href="{{url_for('spotlight')}}" id="spo" align="right">Spotlight</a>
+        <a href="{{url_for('playlist')}}" id="pla" align="right">Playlist</a>
+
+        <div class="logo-image">
+            <img src="https://i.pinimg.com/564x/de/74/89/de74895619a9bdc4388cb18b7aa3d9a9.jpg" class="img-fluid" align="top">
+      </div>
+     </div>
+ <div class="container">
+    
+        <div class="cloud"><img src="{{ url_for('static', filename='/cloud3.png') }}"></div>
+        <div class="cloud2"><img src="{{ url_for('static', filename='/cloud2.png') }}"></div>
+        <div class="cloud3"><img src="{{ url_for('static', filename='/cloud5.png') }}"></div>
+        <div class="cloud4"><img src="{{ url_for('static', filename='/cloud6.png') }}"></div> 
+        <div class="centertext" align="center" style="margin-top:1%;">NOCTURNE</div>
+        <div class="middle">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+            <div class="bar bar6"></div>
+            <div class="bar bar7"></div>
+            <div class="bar bar8"></div>
+            <button class="button button1" style=" position: absolute; text-align: center;"></button>
+            
+        </div>
+        <a href="{{url_for('nocturne')}}"><div class="buttontext" style="left:50px; text-align: center; margin-top:0.5%; margin-bottom: 20%;">WELCOME</div></a>
+          
+    </div>
+    
+    <footer style="position:absolute; top:2050px;">
+        <a href="{{url_for('about')}}" style="text-decoration:none; color:white; top:1425px;">About</a></p>
+      </footer>
+</body>
+
+<script src="{{ url_for('static', filename='/spotlight.js') }}"></script>
+</html>
